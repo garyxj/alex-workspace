@@ -1,5 +1,51 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 心跳检查任务
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+## 心跳检查协议
 
-# Add tasks below when you want the agent to check something periodically.
+**目的:** 防止漂移和幻觉，定期反思工作进度
+
+**频率:** 每次心跳触发时
+
+---
+
+## 心跳检查清单
+
+### 1. 工作状态报告
+- 当前正在执行什么任务？
+- 任务进度如何？（X步中的Y步）
+- 置信度如何？（0-100%）
+- 是否有阻塞？
+
+### 2. 记忆维护
+- 检查 memory/YYYY-MM-DD.md 是否需要更新
+- 是否有重要内容需要迁移到 MEMORY.md？
+- 检查 MEMORY.md 是否有过时信息
+
+### 3. GitHub同步
+- 检查是否有未提交的更改
+- 是否需要推送更新到 GitHub？
+
+### 4. 账户和凭证
+- 检查代理凭证状态
+- 是否有新的需要记录的账户信息？
+
+---
+
+## 报告格式
+
+```
+当前状态: [任务描述]
+进度: [X/Y]
+置信度: [X%]
+阻塞: [有/无]
+```
+
+---
+
+## 紧急情况
+
+如果发现以下情况，立即报告：
+- 陷入循环或重复任务超过3次
+- 工作漂移到无关任务
+- 出现幻觉或无法继续的情况
+- 检测到安全风险

@@ -205,6 +205,70 @@ Periodically (every few days), use a heartbeat to:
 
 Think of it like a human reviewing their journal and updating their mental model. Daily files are raw notes; MEMORY.md is curated wisdom.
 
+## 📊 每日经验总结协议
+
+**目的:** 让代理通过经验变聪明，积累复利资产
+
+**时机:** 每天工作结束前或重要任务完成后
+
+---
+
+### 经验总结模板
+
+在每日记录文件 `memory/YYYY-MM-DD.md` 中添加：
+
+```markdown
+## 今日经验总结
+
+### ✅ 成功经验
+- 哪些提示语法产生了最好的结果？
+- 哪些工具/技能组合效果最好？
+- 遇到的关键问题是如何解决的？
+
+### ❌ 失败教训
+- 哪些方法没有效果？
+- 遇到了哪些阻碍/限制？
+- 哪些命令或操作需要避免？
+
+### 🧠 洞察发现
+- 学到了什么新技能或工作流？
+- 发现了哪些可以改进的地方？
+- 有哪些模式值得记录？
+
+### 🔧 技术细节
+- 命令示例：
+- 配置变更：
+- 新发现的工具/服务：
+```
+
+---
+
+### 经验积累策略
+
+1. **每日记录** - 实时记录工作中的观察和发现
+2. **每周回顾** - 整理本周的关键经验
+3. **每月提炼** - 将重要的洞察更新到 MEMORY.md
+4. **定期应用** - 在新任务中运用已验证的方法
+
+---
+
+### 经验分类
+
+**工作流模式:**
+- 高效的任务分解方法
+- 有效的工具组合
+- 常见问题的解决方案
+
+**沟通模式:**
+- 什么样的回复风格用户喜欢
+- 如何简洁有效地传达信息
+- 何时主动帮助，何时等待指令
+
+**技术模式:**
+- 常用命令和工作流
+- 避免的陷阱和错误
+- 最佳实践和优化技巧
+
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
 ## Make It Yours
