@@ -1,0 +1,89 @@
+{
+  "name": "Agent Swarm Coordinator",
+  "version": "1.0.0",
+  "description": "管理一群 AI 编程代理，实现双层架构（OpenClaw 编排层 + Agent 执行层）",
+
+  "agents": {
+    "codex": {
+      "name": "Codex (GPT-5.3-codex)",
+      "type": "primary",
+      "strengths": [
+        "后端逻辑",
+        "复杂 bug 修复",
+        "多文件重构",
+        "跨代码库推理"
+      ],
+      "usage": "占 90% 的任务",
+      "startup": "codex-agent/run-agent.sh",
+      "tmux_session": "codex-agent"
+    },
+    "claude": {
+      "name": "Claude Code (claude-opus-4.5)",
+      "type": "speed",
+      "strengths": [
+        "前端工作",
+        "git 操作",
+        "权限问题处理"
+      ],
+      "usage": "速度快，适合 git 操作和快速迭代",
+      "startup": "claude-agent/run-agent.sh",
+      "tmux_session": "claude-agent"
+    },
+    "gemini": {
+      "name": "Gemini",
+      "type": "design",
+      "strengths": [
+        "设计审美",
+        "UI/UX 优化"
+      ],
+      "usage": "生成 HTML/CSS 规范，再交给 Claude Code 实现",
+      "startup": "gemini-agent/run-agent.sh",
+      "tmux_session": "gemini-agent"
+    }
+  },
+
+  "worktree": {
+    "base_repo": "<你的主代码仓库路径>",
+    "worktrees_path": "../.worktrees"
+  },
+
+  "monitoring": {
+    "check_interval_minutes": 10,
+    "max_retries": 3,
+    "notify_on_intervention": true
+  },
+
+  "code_reviewers": {
+    "enabled": true,
+    "reviewers": [
+      "codex",
+      "gemini",
+      "claude"
+    ],
+    "skip_claude": true,
+    "require_ui_screenshot": true
+  },
+
+  "workflow": {
+    "auto_merge": false,
+    "require_human_approval": true,
+    "notification_channel": "telegram"
+  },
+
+  "learning": {
+    "enabled": true,
+    "record_successes": true,
+    "record_failures": true,
+    "learning_file": "agent-swarm-learning.json"
+  },
+
+  "safety": {
+    "isolate_agents_from_production": true,
+    "min_principle": true,
+    "human_approval_required": [
+      "create_pr",
+      "merge_to_main",
+      "deploy_to_production"
+    ]
+  }
+}
