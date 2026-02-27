@@ -7,10 +7,28 @@
 
 ### 已获取资源
 
-#### 1. 文章：How to Make Money with OpenClaw Wrappers
+#### 1. 文章：How to Make Money with OpenClaw Wrappers ✅
 - **路径:** D:\Logseq\02_Area领域\X6_AI\如何用openclaw工作挣钱\how to make money with openclaw wrappers.md
 - **状态:** ✅ 已学习并整理
 - **详细笔记:** memory/openclaw-wrappers-business.md
+
+#### 2. 文章：OpenClaw + Claude Code 强强联手 ✅
+- **路径:** OpenClaw + Claude Code 强强联手.md
+- **状态:** ✅ 已学习
+- **详细笔记:** memory/openclaw-claude-code-integration.md
+- **核心:** 双层架构（OpenClaw 编排层 + Agent 执行层），8步从客户需求到 PR 合并
+
+#### 3. 文章：OpenClaw Tools + 53 Skills 完整指南 ✅
+- **路径:** OpenClaw 周报W25 25个工具 + 53个技能 更新指南.md
+- **状态:** ✅ 已学习
+- **详细笔记:** memory/openclaw-tools-skills-guide.md
+- **核心:** Tools vs Skills 概念，同心圆架构（核心能力 → 进阶能力 → 知识层）
+
+#### 4. 文章：OpenClaw 终极指南：10个实战用例 ✅
+- **路径:** OpenClaw 终极指南：如何成为一名超级用户，10个实战经验.md
+- **状态:** ✅ 已学习
+- **详细笔记:** memory/openclaw-10-insane-use-cases.md
+- **核心:** 10个零代码实战用例，数据飞轮效应，一个人 = 一个团队
 
 #### 2. PDF: How to Make Money with OpenClaw Wrappers
 - **路径:** D:\Logseq\03_Project项目\2026\056-buildbyagent\...
