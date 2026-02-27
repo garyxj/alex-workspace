@@ -1,0 +1,36 @@
+# 敏感信息 - 保护隐私
+*.env
+*.env.local
+*.secrets
+credentials.md
+agent-credentials.md
+*_credentials.md
+*_secrets.md
+
+# API Keys
+api-keys.md
+*_api_key*
+*_apikey*
+*_token*
+
+# 密码和账户
+passwords.md
+accounts.md
+secrets.md
+
+# 环境配置
+.envrc
+.env.production
+.env.staging
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.iml
+.DS_Store
