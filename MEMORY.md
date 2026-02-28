@@ -18,6 +18,29 @@
 - 学习笔记 → `memory/*-study.md`
 - 每日记录 → `memory/YYYY-MM-DD.md`
 
+### 重要技术解决方案
+
+**微信文章自动访问：**
+- **Playwright Scraper** - 成功的解决方案
+- 技能位置：`~/.openclaw/skills/playwright-scraper-skill`
+- 支持 3 种模式：web_fetch、Playwright Simple、Playwright Stealth
+- Playwright Stealth 在复杂网站上表现最好（100% 成功率）
+- **配置：** 已安装并测试成功
+
+**其他尝试过的方案：**
+- ❌ web_fetch - 不支持 JS 渲染
+- ❌ browser - 需要手动附加扩展
+- ❌ Firecrawl - 微信返回"环境异常"（反爬虫）
+- ❌ Jina Crawler - 微信返回"环境异常"（反爬虫）
+- ❌ Tavily - 中文搜索有编码问题
+
+**PDF2Skills 概念（来自微信文章学习）：**
+- **知识榨汁机** - 从 PDF 中提取结构化知识
+- **无限流侦探游戏** - 将静态内容转化为可玩的互动游戏
+- **探索者心态** - 验证想法、获得经验，而非结果导向
+- **AI 辅助角色** - 地基挖掘（AI）+ 游戏机制设计（人）
+- **流程验证重要性** - 确保 AI 能"操作"，而人负责设计
+
 ### OpenClaw 商业化
 **核心模式：** Wrapper Business Model
 - 配置 OpenClaw 用于特定用例
@@ -28,6 +51,10 @@
 1. The Content Machine（内容机器）
 2. The Health & Accountability Coach（健康教练）
 3. The RPG Life System（RPG 生活系统）
+4. The Autonomous Dev Team（自主开发团队）
+5. The SEO Empire Builder（SEO 帝国建设者）
+
+**详细笔记：** `memory/monetization-study.md`
 4. The Autonomous Dev Team（自主开发团队）
 5. The SEO Empire Builder（SEO 帝国建设者）
 
